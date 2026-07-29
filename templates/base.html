@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Perfume Store</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <h1>🌸 Luxury Perfume Store</h1>
+    <div class="link_a">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/gallery/">Gallery</a>
+    <a href="/services/">Services</a>
+    <a href="/contact/">Contact</a>
+    </div>
+</nav>
+
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<footer>
+    <h2>© 2026 Luxury Perfume Store. All rights reserved.</h2>
+</footer>
+
+ </body>
+</html>

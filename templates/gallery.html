@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="gallery_header">
+    <h1>Our Perfume Collection</h1>
+    <p>Discover our premium fragrances crafted with elegance and luxury.</p>
+</div>
+
+<div class="gallery_grid">
+
+<!-- Card 1 -->
+
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p2.jpg' %}" alt="Rose Bloom">
+
+    <div class="overlay_text">
+        <h2>Rose Bloom</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Floral fragrance with rose, jasmine and soft musk.</p>
+        <h4>₹1,299</h4>
+    </div>
+</div>
+
+<h3>Rose Bloom</h3>
+
+<button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+    View Details
+</button>
+
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/perfume1.jpg' %}" alt="Midnight Oud">
+
+
+    <div class="overlay_text">
+        <h2>Midnight Oud</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Rich woody notes with a luxurious oriental touch.</p>
+        <h4>₹1,799</h4>
+    </div>
+</div>
+
+<h3>Midnight Oud</h3>
+
+<button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+    View Details
+</button>
+
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p3.jpg' %}" alt="Ocean Mist">
+
+
+    <div class="overlay_text">
+        <h2>Ocean Mist</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Fresh aquatic fragrance inspired by the sea breeze.</p>
+        <h4>₹1,499</h4>
+    </div>
+</div>
+
+<h3>Ocean Mist</h3>
+
+<button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+    View Details
+</button>
+
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p4.jpg' %}" alt="Golden Vanilla">
+
+
+    <div class="overlay_text">
+        <h2>Golden Vanilla</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Warm vanilla and amber notes for a lasting impression.</p>
+        <h4>₹1,699</h4>
+    </div>
+</div>
+
+<h3>Golden Vanilla</h3>
+
+<button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+    View Details
+</button>
+
+
+</div>
+
+<!-- Card 5 -->
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p9.jpg' %}" alt="Lavender Dream">
+
+        <div class="overlay_text">
+            <h2>Lavender Dream</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Relaxing lavender fragrance with a soft floral finish.</p>
+            <h4>₹1,399</h4>
+        </div>
+    </div>
+
+    <h3>Lavender Dream</h3>
+
+    <button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+        View Details
+    </button>
+</div>
+
+<!-- Card 6 -->
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p6.jpg' %}" alt="Royal Amber">
+
+        <div class="overlay_text">
+            <h2>Royal Amber</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Warm amber fragrance with luxurious oriental notes.</p>
+            <h4>₹1,899</h4>
+        </div>
+    </div>
+
+    <h3>Royal Amber</h3>
+
+    <button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+        View Details
+    </button>
+</div>
+
+<!-- Card 7 -->
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p7.jpg' %}" alt="Citrus Breeze">
+
+        <div class="overlay_text">
+            <h2>Citrus Breeze</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Fresh citrus blend with lemon, bergamot, and mint.</p>
+            <h4>₹1,299</h4>
+        </div>
+    </div>
+
+    <h3>Citrus Breeze</h3>
+
+    <button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+        View Details
+    </button>
+</div>
+
+<!-- Card 8 -->
+<div class="perfume_card overlay_card">
+    <div class="image_overlay_box">
+        <img src="{% static 'images/p8.jpg' %}" alt="Velvet Musk">
+
+        <div class="overlay_text">
+            <h2>Velvet Musk</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Soft musk fragrance with vanilla and sandalwood notes.</p>
+            <h4>₹1,599</h4>
+        </div>
+    </div>
+
+    <h3>Velvet Musk</h3>
+
+    <button type="button" class="gallery_btn" onclick="toggleDetails(this)">
+        View Details
+    </button>
+</div>
+
+</div>
+</div>
+
+
+<script>
+function toggleDetails(button){
+
+    const card = button.closest('.overlay_card');
+    const box = card.querySelector('.image_overlay_box');
+
+    box.classList.toggle('active');
+
+}
+</script>
+
+
+{% endblock %}

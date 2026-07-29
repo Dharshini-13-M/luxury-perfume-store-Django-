@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="contact_header">
+    <h1>Contact Us</h1>
+</div>
+
+<div class="contact_container">
+
+<!-- Contact Details -->
+<div class="contact_info">
+    <h1>Get in Touch</h1>
+    <h5>We’d love to hear from you. Get in touch with us anytime.</h5>
+    <p><b>📍 Address:</b> Chennai, Tamil Nadu, India</p>
+    <p><b>📞 Phone:</b> +91 98765 43210</p>
+    <p><b>✉️ Email:</b> luxuryperfume@example.com</p>
+
+    <div class="social_icons">
+    <a href="https://www.facebook.com" target="_blank" class="facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="twitter">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+
+    <a href="https://www.linkedin.com" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.youtube.com" target="_blank" class="youtube">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+</div>
+
+<!-- Contact Form -->
+<div class="contact_form">
+    <h1>Send a Message</h1>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="button" class="btn" onclick="sendMessage()">
+    Send Message
+</button>
+    </form>
+</div>
+
+</div>
+
+<script>
+function sendMessage(){
+
+    alert("✅ Your message has been sent successfully! We will contact you soon.");
+
+}
+</script>
+
+
+{% endblock %}

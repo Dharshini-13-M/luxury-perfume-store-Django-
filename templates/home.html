@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero_content">
+        <h2>Welcome to Our Luxury Perfume Store</h2>
+
+    <p>
+        Experience elegance in every spray. Discover premium fragrances
+        crafted for lasting freshness, confidence, and timeless beauty.
+    </p>
+
+    <p>
+        <b>Find your signature scent today.</b>
+    </p>
+
+    <a href="/gallery/" class="btn">View Gallery</a>
+
+    </div>
+    
+    <div>
+        <img src="{% static 'images/p5.jpg' %}" alt="Perfume" width="300">
+    </div>
+    
+</div>
+{% endblock %}

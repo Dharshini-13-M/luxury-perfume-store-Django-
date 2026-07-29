@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="video_banner">
+<video autoplay muted loop playsinline class="bg_video">
+    <source src="{% static 'images/perfume.mp4' %}" type="video/mp4">
+</video>
+
+<div class="video_content">
+    <h1>About Luxury Perfume Store</h1>
+    <p>Elegance • Fragrance • Confidence</p>
+
+    <p>
+        Discover premium perfumes crafted for lasting freshness,
+        confidence, and timeless beauty.
+    </p>
+</div>
+
+
+</div>
+
+<!-- About Text Section -->
+
+<div class="about_text_section">
+    <h2>Our Story</h2>
+
+<p>
+    Founded in 2020, Luxury Perfume Store was created with a passion
+    for elegance, fragrance, and self-expression. We believe that a perfume
+    is more than a scent—it is a reflection of personality and confidence.
+</p>
+
+<p>
+    Our mission is to help every customer discover a signature fragrance
+    that feels truly special.
+</p>
+
+
+</div>
+
+{% endblock %}
