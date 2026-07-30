@@ -477,3 +477,203 @@ opacity: 0.35;
     transform: translateY(-5px) scale(1.08);
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
+
+/* =========================
+   Mobile Responsive Design
+   ========================= */
+
+@media screen and (max-width: 768px){
+
+    /* Navbar */
+    nav{
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    nav h1{
+        display: block;
+        margin-bottom: 12px;
+        font-size: 24px;
+    }
+
+    .link_a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-left: 0;
+    }
+
+    nav a{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    /* Hero section */
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .hero_content{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .hero img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* About video */
+    .video_banner{
+        height: 350px;
+        border-radius: 0;
+    }
+
+    .video_content h1{
+        font-size: 28px;
+    }
+
+    .video_content p{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .about_text_section{
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    /* Gallery */
+    .gallery_grid{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .gallery_header h1{
+        font-size: 30px;
+    }
+
+    .gallery_header p{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .perfume_card{
+        padding: 15px;
+    }
+
+    .perfume_card img{
+        height: auto;
+    }
+
+    /* Services */
+    .services_grid{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .services_header h1{
+        font-size: 30px;
+    }
+
+    .services_header p{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    /* Contact */
+    .contact_container{
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .contact_info,
+    .contact_form{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .contact_info h5{
+        font-size: 18px;
+    }
+
+    .social_icons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact_form input,
+    .contact_form textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Buttons */
+    .btn,
+    .gallery_btn{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+    footer{
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    footer h2{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px){
+
+    nav h1{
+        font-size: 20px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    .hero_content h2{
+        font-size: 24px;
+    }
+
+    .hero_content p{
+        font-size: 15px;
+    }
+
+    .video_content h1{
+        font-size: 24px;
+    }
+
+    .gallery_header h1,
+    .services_header h1,
+    .contact_header h1{
+        font-size: 26px;
+    }
+
+    .gallery_header p,
+    .services_header p,
+    .contact_header p{
+        font-size: 14px;
+    }
+}
